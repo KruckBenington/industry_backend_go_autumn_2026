@@ -10,6 +10,7 @@ type LRUCache[K comparable, V any] struct {
 	capacity int
 	ll       list.List
 	items    map[K]*list.Element
+
 }
 
 func NewLRUCache[K comparable, V any](capacity int) *LRUCache[K, V] {
