@@ -1,5 +1,13 @@
 package main
 
+import "strings"
+
 func greet(name string) string {
-	panic("TODO: implement")
+	currentName := strings.TrimSpace(name)
+
+	if len(currentName) == 0 {
+		return "Hello, World!"
+	}
+
+	return "Hello, " + currentName + "!"
 }
